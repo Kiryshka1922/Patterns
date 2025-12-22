@@ -37,8 +37,8 @@ class ValidateMidleware extends AbstractMiddleware {
     }
 }
 
-class Controller extends AbstractMiddleware {
-    override handle(request: IRequest): void {
+export class Controller extends AbstractMiddleware {
+    override handle(_request: IRequest): void {
         console.log('All midlewares have success');
     }
 }
